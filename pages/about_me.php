@@ -55,8 +55,7 @@
         <div class="row">
           <section class="content__left col-md-8">
             <div class="block">
-              <a>232 000 просмотров</a>
-              <h3>Работа с Node.js - Программируем Ford Mustang</h3>
+              <h3>Обо мне</h3>
               <div class="block__content">
                 <img src="/assets/images/post-image.jpg">
 
@@ -76,73 +75,6 @@
 <h2>Grass Divide Male Heaven His It Forth Second</h2>
 <p>Day subdue moved form meat fill fly spirit there living dry created it bring you face his every. Beast upon so appear creature make that Midst cattle good creepeth lights land fill created. Winged midst won&#39;t god. Subdue. Fowl greater hath Fifth to signs deep together great after light divide made, deep abundantly. Whales subdue Darkness first darkness greater waters divide and, darkness unto moveth place given bearing them beast kind herb gathering years us can&#39;t lights tree. Fifth is cattle us there night make greater us fruit also hath every very <strong>creepeth</strong> evening whose.</p>
                 </div>
-              </div>
-            </div>
-
-            <div class="block">
-              <a href="#comment-add-form">Добавить свой</a>
-              <h3>Комментарии к статье</h3>
-              <div class="block__content">
-                <div class="articles articles__vertical">
-
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=125);"></div>
-                    <div class="article__info">
-                      <a href="#">Артём aka Snake</a>
-                      <div class="article__info__meta">
-                        <small>10 минут назад</small>
-                      </div>
-                      <div class="article__info__preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ...</div>
-                    </div>
-                  </article>
-
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=125);"></div>
-                    <div class="article__info">
-                      <a href="#">Виталий aka Umka</a>
-                      <div class="article__info__meta">
-                        <small>7 дней назад</small>
-                      </div>
-                      <div class="article__info__preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ...</div>
-                    </div>
-                  </article>
-
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=125);"></div>
-                    <div class="article__info">
-                      <a href="#">Олег aka SnakeEye</a>
-                      <div class="article__info__meta">
-                        <small>1.1.1970</small>
-                      </div>
-                      <div class="article__info__preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ...</div>
-                    </div>
-                  </article>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="block" id="comment-add-form">
-              <h3>Добавить комментарий</h3>
-              <div class="block__content">
-                <form class="form">
-                  <div class="form__group">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <input type="text" class="form__control" required="" name="name" placeholder="Имя">
-                      </div>
-                      <div class="col-md-6">
-                        <input type="text" class="form__control" required="" name="nickname" placeholder="Никнейм">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form__group">
-                    <textarea name="text" required="" class="form__control" placeholder="Текст комментария ..."></textarea>
-                  </div>
-                  <div class="form__group">
-                    <input type="submit" class="form__control" name="do_post" value="Добавить комментарий">
-                  </div>
-                </form>
               </div>
             </div>
           </section>
@@ -211,70 +143,6 @@
                         <small>Категория: <a href="#">Программирование</a></small>
                       </div>
                       <div class="article__info__preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ...</div>
-                    </div>
-                  </article>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="block">
-              <h3>Комментарии</h3>
-              <div class="block__content">
-                <div class="articles articles__vertical">
-
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(/assets/images/post-image.jpg);"></div>
-                    <div class="article__info">
-                      <a href="#">Jonny Flame</a>
-                      <div class="article__info__meta">
-                        <small><a href="#">Название статьи #1</a></small>
-                      </div>
-                      <div class="article__info__preview">Бла бла бла бла бла бла бла, и думаю еще что бла бла бла бла бла бла бла ...</div>
-                    </div>
-                  </article>
-
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(/assets/images/post-image.jpg);"></div>
-                    <div class="article__info">
-                      <a href="#">Jonny Flame</a>
-                      <div class="article__info__meta">
-                        <small><a href="#">Название статьи #1</a></small>
-                      </div>
-                      <div class="article__info__preview">Бла бла бла бла бла бла бла, и думаю еще что бла бла бла бла бла бла бла ...</div>
-                    </div>
-                  </article>
-
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(/assets/images/post-image.jpg);"></div>
-                    <div class="article__info">
-                      <a href="#">Jonny Flame</a>
-                      <div class="article__info__meta">
-                        <small><a href="#">Название статьи #1</a></small>
-                      </div>
-                      <div class="article__info__preview">Бла бла бла бла бла бла бла, и думаю еще что бла бла бла бла бла бла бла ...</div>
-                    </div>
-                  </article>
-
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(/assets/images/post-image.jpg);"></div>
-                    <div class="article__info">
-                      <a href="#">Jonny Flame</a>
-                      <div class="article__info__meta">
-                        <small><a href="#">Название статьи #1</a></small>
-                      </div>
-                      <div class="article__info__preview">Бла бла бла бла бла бла бла, и думаю еще что бла бла бла бла бла бла бла ...</div>
-                    </div>
-                  </article>
-
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(/assets/images/post-image.jpg);"></div>
-                    <div class="article__info">
-                      <a href="#">Jonny Flame</a>
-                      <div class="article__info__meta">
-                        <small><a href="#">Название статьи #1</a></small>
-                      </div>
-                      <div class="article__info__preview">Бла бла бла бла бла бла бла, и думаю еще что бла бла бла бла бла бла бла ...</div>
                     </div>
                   </article>
 
