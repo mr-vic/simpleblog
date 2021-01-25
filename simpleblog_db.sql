@@ -31,7 +31,7 @@ CREATE TABLE `articles` (
   `pubdate` datetime DEFAULT NULL,
   `views` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COMMENT='Статьи блога';
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COMMENT='Статьи блога';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `articles` (
 
 LOCK TABLES `articles` WRITE;
 /*!40000 ALTER TABLE `articles` DISABLE KEYS */;
-INSERT INTO `articles` VALUES (1,'Как приготовить суп',NULL,'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',2,'2021-01-23 16:27:00',0),(2,'План для похудения',NULL,'Aliquet hac tellus augue vulputate mauris nullam aliquet. Sociosqu risus. Integer libero est ridiculus nullam tincidunt praesent habitasse donec facilisi platea. Euismod facilisi. Dapibus enim feugiat fames mus nonummy sagittis nostra. Conubia euismod conubia convallis dapibus.\r\n\r\nId aliquam nisi non rutrum cras lectus eu sem ante at malesuada. Interdum interdum platea. Taciti litora tellus.\r\n\r\nNascetur nec, auctor hymenaeos euismod rhoncus tempor pulvinar condimentum non aliquet aenean diam porttitor sociosqu tincidunt eu nam sed porttitor rutrum sociosqu fermentum lorem conubia senectus amet tortor pede sodales, nisl potenti nascetur dui vivamus fames Velit dictum consequat. Montes nonummy curabitur lacinia class nisi penatibus.',1,'2021-01-19 06:08:00',0),(3,'Что такое Lorem Ipsum?',NULL,'Nulla pede tincidunt fames. Scelerisque nunc amet euismod in dolor ut eleifend penatibus est.\r\n\r\nAenean gravida, lectus hymenaeos, ridiculus dictum cum. Accumsan neque fringilla mi, curabitur pulvinar potenti dictumst nullam. Parturient.\r\n\r\nIaculis aliquet libero ultricies suspendisse hendrerit ultrices metus velit consequat ullamcorper pretium, adipiscing eget.\r\n\r\nConsequat malesuada tempus scelerisque praesent. Scelerisque porta dis turpis. Consectetuer parturient ad potenti.\r\n\r\nNam, fusce dictum vulputate augue ad sodales varius class. Placerat sed, duis sem taciti est ridiculus amet. Penatibus bibendum viverra ligula.\r\n\r\nDictumst praesent accumsan rhoncus morbi taciti cum, amet potenti. Consectetuer erat. Praesent dis dui. Et ad class pede penatibus etiam mi.',4,'2021-01-11 07:00:00',0),(4,'Охота снежного леопарда',NULL,'Lorem ipsum ...',5,'2021-01-24 00:39:12',0);
+INSERT INTO `articles` VALUES (1,'Сложившаяся структура организации продолжает удивлять','test.jpg','<h2>Что такое Lorem Ipsum?</h2>\n<p><strong>Lorem Ipsum</strong> - это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>\n',4,'2021-01-23 16:27:00',123),(2,'Сложно сказать, почему герцог графства коронован','test.jpg','<h2>Почему он используется?</h2>\n<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации \"Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст..\"\nМногие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам \"lorem ipsum\" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>\n',5,'2021-01-19 06:08:00',14),(3,'Спикеры палаты госдумы негодуют','test.jpg','<h2>Откуда он появился?</h2>\n<p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, \"consectetur\", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги \"de Finibus Bonorum et Malorum\" (\"О пределах добра и зла\"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", происходит от одной из строк в разделе 1.10.32</p><p>Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 \"de Finibus Bonorum et Malorum\" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>\n',6,'2021-01-11 07:00:00',24),(4,'Независимые СМИ потому и независимы, что потускнели светлые лики икон','test.jpg','<h2>Где его взять?</h2>\n<p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором. Он использует словарь из более чем 200 латинских слов, а также набор моделей предложений. В результате сгенерированный Lorem Ipsum выглядит правдоподобно, не имеет повторяющихся абзацей или \"невозможных\" слов.</p>\n',7,'2021-01-24 00:39:12',252),(5,'Крепость духовных скреп оказалась ошибочной','test.jpg','<p>В своём стремлении улучшить пользовательский опыт мы упускаем, что сторонники тоталитаризма в науке, превозмогая сложившуюся непростую экономическую ситуацию, в равной степени предоставлены сами себе. Элементы политического процесса являются только методом политического участия и представлены в исключительно положительном свете. В частности, семантический разбор внешних противодействий не оставляет шанса для вывода текущих активов. Равным образом, синтетическое тестирование напрямую зависит от экспериментов, поражающих по своей масштабности и грандиозности. Являясь всего лишь частью общей картины, базовые сценарии поведения пользователей, инициированные исключительно синтетически, объективно рассмотрены соответствующими инстанциями.</p>\r\n\r\n<p>Но элементы политического процесса неоднозначны и будут объявлены нарушающими общечеловеческие нормы этики и морали. Банальные, но неопровержимые выводы, а также акционеры крупнейших компаний призваны к ответу. Не следует, однако, забывать, что консультация с широким активом предопределяет высокую востребованность вывода текущих активов. В целом, конечно, курс на социально-ориентированный национальный проект обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.</p>',7,'2021-01-25 00:00:00',758),(6,'Оказывается, был сорван доклад председателя совхоза','test.jpg','<p>Разнообразный и богатый опыт говорит нам, что высокое качество позиционных исследований не даёт нам иного выбора, кроме определения системы массового участия! С учётом сложившейся международной обстановки, курс на социально-ориентированный национальный проект однозначно определяет каждого участника как способного принимать собственные решения касаемо инновационных методов управления процессами. Прежде всего, социально-экономическое развитие требует определения и уточнения приоритизации разума над эмоциями. Повседневная практика показывает, что высокое качество позиционных исследований, в своём классическом представлении, допускает внедрение экспериментов, поражающих по своей масштабности и грандиозности. Как принято считать, диаграммы связей в равной степени предоставлены сами себе.</p>\r\n\r\n<p>Господа, дальнейшее развитие различных форм деятельности в значительной степени обусловливает важность вывода текущих активов. Для современного мира убеждённость некоторых оппонентов требует определения и уточнения экономической целесообразности принимаемых решений. С учётом сложившейся международной обстановки, экономическая повестка сегодняшнего дня способствует подготовке и реализации поставленных обществом задач!</p>',8,'2021-01-24 00:00:00',1235);
 /*!40000 ALTER TABLE `articles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,7 +55,7 @@ CREATE TABLE `articles_categories` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `articles_categories` (
 
 LOCK TABLES `articles_categories` WRITE;
 /*!40000 ALTER TABLE `articles_categories` DISABLE KEYS */;
-INSERT INTO `articles_categories` VALUES (1,'Спорт'),(2,'Кулинария'),(3,'Садоводство'),(4,'Программирование'),(5,'Охота и рыбалка');
+INSERT INTO `articles_categories` VALUES (4,'Программирование'),(5,'Lifestyle'),(6,'Игры'),(7,'Безопасность'),(8,'Хакерство'),(9,'Разное');
 /*!40000 ALTER TABLE `articles_categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -78,11 +78,13 @@ DROP TABLE IF EXISTS `comments`;
 CREATE TABLE `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `author` varchar(100) DEFAULT NULL,
+  `nickname` varchar(100) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `text` text NOT NULL,
   `pubdate` datetime NOT NULL,
   `articles_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +93,7 @@ CREATE TABLE `comments` (
 
 LOCK TABLES `comments` WRITE;
 /*!40000 ALTER TABLE `comments` DISABLE KEYS */;
-INSERT INTO `comments` VALUES (1,'Alex Storm','Классный получился суп','2021-01-23 03:11:00',1);
+INSERT INTO `comments` VALUES (1,'Alex Storm','storm','storm@gmail.com','Классный получился суп','2021-01-23 03:11:00',1),(2,'Александр','alex','alex@gmail.com','Классная статья! Узнал много нового.','2021-01-25 16:50:31',5),(3,'Benny','Hill','benny_hill@gmail.com','Cool article! It was realy nice. For sure.','2021-01-12 17:03:01',6),(4,'Angry','Bird','angry_birds@gmail.com','Что за бред? Откуда вообще инфа?','2021-01-20 17:03:01',4),(5,'Rodrigo','Ajax','rodrigo@gmail.com','Интересно, думал на первое место выйдет Гонзалес','2021-01-16 17:20:05',4);
 /*!40000 ALTER TABLE `comments` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -104,4 +106,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-01-25 11:21:46
+-- Dump completed on 2021-01-25 17:54:44
