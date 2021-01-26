@@ -49,16 +49,16 @@
                       $page = 1;
                   }
 
-                  $offset = 0;
-
-                  if ( $page != 0) {
-                    $offset = $per_page * $page;
-                  }
+                  $offset = ($per_page * $page) - $per_page;
 
                   $articles = mysqli_query($connection, "SELECT * FROM `articles` ORDER BY `id` DESC LIMIT $offset, $per_page");
-                ?>
 
-                <?php 
+                  $articles_exist = true;
+
+                  if( mysqli_num_rows($articles) <= 0 ) {
+                      echo 'Статьи не существуют!';
+                      $articles_exist = false;
+                  }
                   while( $art = mysqli_fetch_assoc($articles) )
                   { 
                     ?>
@@ -85,87 +85,20 @@
                     }
                   ?>
                 </div>
-              </div>
-            </div>
-
-            <div class="block">
-              <a href="/articles.php?categorie=7">Все записи</a>
-              <h3>Безопасность [Новейшее]</h3>
-              <div class="block__content">
-                <div class="articles articles__horizontal">
-
                 <?php
-                  $articles = mysqli_query($connection, "SELECT * FROM `articles` WHERE `categorie_id` = 7 ORDER BY `id` DESC LIMIT  10");
-                ?>
-
-                <?php 
-                  while( $art = mysqli_fetch_assoc($articles) )
-                  { 
-                    ?>
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(/uploads/images/<?php echo $art['image']; ?>);"></div>
-                    <div class="article__info">
-                      <a href="/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
-                      <div class="article__info__meta">
-                        <?php 
-                          $arc_cat = false;
-                          foreach ( $categories as $cat ) {
-                            if ( $cat['id'] == $art['categorie_id'] ){
-                              $art_cat = $cat;
-                              break;
-                            }
-                          }
-                        ?>
-                        <small>Категория: <a href="/articles.php?categorie=<?php echo $art_cat['id']; ?>"><?php echo $art_cat['title']; ?></a></small>
-                      </div>
-                      <div class="article__info__preview"><?php echo mb_substr(strip_tags($art['text']), 0, 100, 'utf-8') . ' ...'; ?></div>
-                    </div>
-                  </article>
-                      <?php
+                    if( $articles_exist == true ) {
+                        echo '<div class="paginator">';
+                        if ( $page > 1 )
+                        {
+                            echo '<a href="/articles.php?page='. ($page - 1) .'"> &laquo; Прошлая страница </a>';
+                        }
+                        if ( $page < $total_pages )
+                        {
+                            echo '<a href="/articles.php?page='. ($page + 1) .'"> Следующая страница &raquo; </a>';
+                        }
+                        echo '</div>';
                     }
-                  ?>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="block">
-              <a href="/articles.php?categorie=4">Все записи</a>
-              <h3>Программирование [Новейшее]</h3>
-              <div class="block__content">
-                <div class="articles articles__horizontal">
-                <?php
-                  $articles = mysqli_query($connection, "SELECT * FROM `articles` WHERE `categorie_id` = 4 ORDER BY `id` DESC LIMIT  10");
                 ?>
-
-                <?php 
-                  while( $art = mysqli_fetch_assoc($articles) )
-                  { 
-                    ?>
-                  <article class="article">
-                    <div class="article__image" style="background-image: url(/uploads/images/<?php echo $art['image']; ?>);"></div>
-                    <div class="article__info">
-                      <a href="/article.php?id=<?php echo $art['id']; ?>"><?php echo $art['title']; ?></a>
-                      <div class="article__info__meta">
-                        <?php 
-                          $arc_cat = false;
-                          foreach ( $categories as $cat ) {
-                            if ( $cat['id'] == $art['categorie_id'] ){
-                              $art_cat = $cat;
-                              break;
-                            }
-                          }
-                        ?>
-                        <small>Категория: <a href="/articles.php?categorie=<?php echo $art_cat['id']; ?>"><?php echo $art_cat['title']; ?></a></small>
-                      </div>
-                      <div class="article__info__preview"><?php echo mb_substr(strip_tags($art['text']), 0, 100, 'utf-8') . ' ...'; ?></div>
-                    </div>
-                  </article>
-                      <?php
-                    }
-                  ?>
-
-                </div>
               </div>
             </div>
           </section>
