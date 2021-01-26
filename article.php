@@ -78,7 +78,7 @@
                       <article class="article">
                       <div class="article__image" style="background-image: url(https://www.gravatar.com/avatar/<?php echo md5($comment['email']); ?>?s=125);"></div>
                         <div class="article__info">
-                          <a href="#"><?php echo $comment['nickname']; ?></a>
+                          <a href="#"><?php echo $comment['author']; ?></a>
                           <div class="article__info__meta">
                             <small>10 минут назад</small>
                           </div>
@@ -114,6 +114,9 @@
 
                       if ( empty($errors) ){
                         // добавляем комментарий
+                        // Небезопасный метод получения параметра GET
+                        mysqli_query($connection, "INSERT INTO `comments` (`author`, `nickname`, `email`, `text`, `pubdate`, `articles_id`) VALUES ('". $_POST['name'] . "', '" . $_POST['nickname'] . "', '"  . $_POST['email'] . "', '" . $_POST['text'] . "', NOW(), '" . $art['id'] . "')");
+
                         echo '<span style="color: green; font-weight: bold; margin-bottom: 10px; display: block;">Комментарий успешно добавлен</span>';
                       } else {
                         echo '<span style="color: red; font-weight: bold; margin-bottom: 10px; display: block;">' . $errors['0'] . '</span>';
